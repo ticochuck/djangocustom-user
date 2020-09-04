@@ -1,12 +1,11 @@
-# Django Custom User
+# Django Models
 
 [Link to Latest PR](https://github.com/ticochuck/djangocustom-user/pull/1)
 
 ## Description
 
-- Create Django application from scratch that has a custom user model named CustomUser
-- Custom user should use email instead of username for signup / login
-- Application should work with Django Admin
+Create an app user Custom User. 
+Make the email address the username. Username must be unique. 
 
 
 ## Usage
@@ -24,11 +23,10 @@
 - `python manage.py runserver` - to run server
 
 ## Tests
-Use Django’s built in testing tools
 - Verify the creation of a new user with email and password
 - Verify that duplicate emails are not allowed
 
-## Lab29 - Django Custom User
+## Lab26 - Django Custom User
 
 [Canvas Assignment](https://canvas.instructure.com/courses/2045906/assignments/15160047)
 
@@ -38,4 +36,5 @@ Use Django’s built in testing tools
 
 
 ## References
-[Email Auth](https://learndjango.com/tutorials/django-log-in-email-not-username)
+[Custom User Email]https://learndjango.com/tutorials/django-log-in-email-not-username)
+[Exceptions](https://docs.djangoproject.com/en/3.1/ref/exceptions/)
