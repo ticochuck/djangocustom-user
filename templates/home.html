@@ -1,19 +1,20 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
 Home Page
 {% endblock title %}
 
+{% block header %}
+
+
+
+{% endblock header %}
+
 {% block content %}
+  <h1>Welcome to Pages</h1>
 
-{% if user.is_authenticated %}
-  Hi {{ user.email }}!
-  <p><a href="{% url 'account_logout' %}">Log Out</a></p>
-
-  {% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'account_login' %}">Log In</a> |
-  <a href="{% url 'account_signup' %}">Sign Up</a>
-{% endif %}
-
+  <section>
+    <p>something will go here</p>
+  </section>
 {% endblock content %}

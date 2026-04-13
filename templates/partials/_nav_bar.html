@@ -1,0 +1,16 @@
+{% if user.is_authenticated %}
+<ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li>Hi {{ user.email }}!</li>
+    <li><a href="{% url 'account_logout' %}">Log Out</a></li>
+    
+  </ul>
+
+  {% else %}
+  
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'account_login' %}">Log In</a></li>
+    <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+  </ul>
+{% endif %}
